@@ -13,6 +13,11 @@
     border-top-right-radius: 50%;
 }
 
+.fa-trash,
+.fa-check-circle {
+    pointer-events: none;
+}
+
 .completed {
     text-decoration: line-through;
     opacity: 0.5;
@@ -24,9 +29,3 @@
 }
 
 
-.trash-btn {
-    pointer-events: none;
-}
-.complete-btn {
-    pointer-events: none;
-}

@@ -33,18 +33,20 @@ btnEl.addEventListener("click" , event => {
 
 listEl.addEventListener("click" ,e => {
          const items = e.target;
-        //  e.preventDefault()
+          e.preventDefault()
 
          if(items.classList[0] === "complete-btn") {
             const todo = items.parentElement;
-            todo.classList.add("slide")
+            todo.classList.add("completed")
+            console.log(items);
          }
 
          if(items.classList[0] === "trash-btn") {
              const todo1 = items.parentElement;
-             todo1.classList.toggle("completed");
+             todo1.classList.add("slide");
+             console.log(items);
          }
- console.log(items);
+ 
 
  
 })
