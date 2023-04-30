@@ -14,20 +14,19 @@ btnEl.addEventListener("click" , event => {
          newDiv.appendChild(newLi);
 
          const buttonEl = document.createElement("button");
-         buttonEl.innerHTML = '<i class="fas fa-check-circle"></li>';
-         buttonEl.classList.add("complete-btn" , "float-right" , "pr-2");
+         buttonEl.innerHTML = '<i class="fas fa-check-circle pl-3"></li>';
+         buttonEl.classList.add("complete-btn" , "float-right" , "pr-2" , "text-pink-500" , "bg-pink-100" , "h-full" );
          newDiv.appendChild(buttonEl);
 
          const trashEl = document.createElement("button");
-         trashEl.innerHTML = '<i class="fas fa-trash"></li>';
-         trashEl.classList.add("trash-btn" , "float-right" , "pr-2");
+         trashEl.innerHTML = '<i class="fas fa-trash px-3"></li>';
+         trashEl.classList.add("trash-btn" , "float-right" , "pr-2" , "text-pink-500" , "bg-gray-400" , "h-full" , "rounded-br-full" , "rounded-tr-full");
          newDiv.appendChild(trashEl);
 
          listEl.appendChild(newDiv);
          
          todoInput.value = ""
 
-         console.log(listEl);
 })
 
 
@@ -38,17 +37,13 @@ listEl.addEventListener("click" ,e => {
          if(items.classList[0] === "complete-btn") {
             const todo = items.parentElement;
             todo.classList.add("completed")
-            console.log(items);
          }
 
          if(items.classList[0] === "trash-btn") {
              const todo1 = items.parentElement;
             //  todo1.classList.add("slide");
             todo1.remove()
-             console.log(items);
          }
- 
-
  
 })
 
