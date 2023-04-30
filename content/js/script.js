@@ -43,7 +43,8 @@ listEl.addEventListener("click" ,e => {
 
          if(items.classList[0] === "trash-btn") {
              const todo1 = items.parentElement;
-             todo1.classList.add("slide");
+            //  todo1.classList.add("slide");
+            todo1.remove()
              console.log(items);
          }
  
