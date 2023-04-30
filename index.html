@@ -20,13 +20,21 @@
     <p class="text-center font-bold text-4xl mt-12">My TO DO List</p>
     <form class="w-[100%] flex justify-content-center justify-center align-content-center align-items-center mt-12" action="">
         <div class="flex">
-            <input class="border mx-3 rounded-full w-[300px] h-[50px]" type="text">
-            <button type="submit" class=" rounded-full w-[30px] h-[30px]">
+               <div>
+                <input
+                    class="outline-none text-gray-800 px-5 mx-3 rounded-full sm:w-[300px] max-sm:w-[200px] w-[150px] h-[50px] todo-input"
+                    type="text">
+                <div>
+                    <ul class="list mx-3"></ul>
+                </div>
+               </div>
+         
+            <button type="submit" class="btn rounded-full w-[30px] h-[30px]">
                 <i class="fas fa-plus-circle fa-lg text-pink-500 text-4xl"></i>
             </button>
         </div>
-        <div class="relative rounded-full truncate select">
-            <select class=" cursor-pointer w-[130px] mx-5 outline-none rounded-full h-[50px] text-pink-500" name="todo" id="">
+        <div class="relative rounded-full select">
+            <select class=" cursor-pointer sm:w-[130px] w-[80px] mx-5 outline-none rounded-full h-[50px] text-pink-500 px-5" name="todo" id="">
                 <option class="px-3" value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="incomplete">Incomplete</option>
@@ -34,11 +42,11 @@
         </div>
     </form>
 
-    <div class="todo">
-        <ul class="list"></ul>
-    </div>
+   
 
     
     <script src="./content/js/script.js"></script>
+    
+    
 </body>
 </html>

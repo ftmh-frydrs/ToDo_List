@@ -8,5 +8,25 @@
     padding: 1rem;
     pointer-events: none;
     transition: all 0.3s ease;
+    height: 50px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+
+.trash-btn {
+    pointer-events: none;
+}
+.complete-btn {
+    pointer-events: none;
+}
