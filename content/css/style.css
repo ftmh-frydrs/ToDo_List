@@ -2,7 +2,7 @@
 .select::after {
     content: "\25BC";
     position: absolute;
-    background: rgb(255, 0, 225);
+    background: #ec4899;
     top: 0;
     right: 0;
     padding: 1rem;

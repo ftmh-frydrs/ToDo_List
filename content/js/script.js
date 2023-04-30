@@ -7,20 +7,20 @@ const sectionEl = document.querySelector("select");
 btnEl.addEventListener("click" , event => {
          event.preventDefault();
          let newDiv = document.createElement("div");
-         newDiv.classList.add("todo" , "sm:w-[300px]" , "w-[150px]" , "h-[50px]" , "bg-pink-300" , "rounded-full" , "mt-5" );
+         newDiv.classList.add("todo" , "sm:w-[300px]" , "max-sm:w-[200px]" , "w-[150px]" , "h-[50px]" , "bg-pink-500" , "rounded-full" , "mt-5" , "flex");
          let newLi = document.createElement("li");
          newLi.innerText = todoInput.value;
-         newLi.classList.add("item","pl-5" );
+         newLi.classList.add("item","pt-3" , "pl-5" , "flex-1" );
          newDiv.appendChild(newLi);
 
          const buttonEl = document.createElement("button");
          buttonEl.innerHTML = '<i class="fas fa-check-circle"></li>';
-         buttonEl.classList.add("complete-btn");
+         buttonEl.classList.add("complete-btn" , "float-right" , "pr-2");
          newDiv.appendChild(buttonEl);
 
          const trashEl = document.createElement("button");
          trashEl.innerHTML = '<i class="fas fa-trash"></li>';
-         trashEl.classList.add("trash-btn");
+         trashEl.classList.add("trash-btn" , "float-right" , "pr-2");
          newDiv.appendChild(trashEl);
 
          listEl.appendChild(newDiv);
